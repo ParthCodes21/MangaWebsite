@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap');
+
+
+header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: 'Baloo 2', cursive; /* Fun anime style */
+  background: linear-gradient(to right, white, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+}
+
+/* Search bar styling */
+header input[type="text"] {
+  width: 200px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  
+}
+
+/* On focus effect */
+header input[type="text"]:focus {
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Optional: for space */
+  padding: 10px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Baloo 2', sans-serif;
+}
+
+header input[type="text"] {
+  width: 250px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+  transform: translateY(-4px); /* Thoda upar le jane ke liye */
+}
+header {
+  background-image:url(Screenshot_20250521_155529.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.manga-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.manga-card {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.2s ease;
+  padding: 20;
+}
+
+.manga-card:hover {
+  transform: scale(1.05);
+}
+
+.manga-card img {
+  width: 100%;
+  height: auto;
+}
+
+.manga-card h3 {
+  margin: 10px 0;
+  color: white;
+  font-family: 'Baloo 2', Sans-Serif;
+  font-size: 18px;
+}
+
+/* Body ke liye background image */
+
+  body {
+  margin: 0;
+  padding: 0;
+  background-image: url('Screenshot_20250520_204116.jpg');
+  background-repeat: repeat; /* Full repeat horizontally + vertically */
+  background-size: 500px auto; /* Set fixed width, height auto for proportion */
+  background-position: top left;
+  min-height: 100vh;
+  color: white;
+  position: relative;
+  z-index: 0;
+}
+
+
+/* Main content ko upar le aao */
+main {
+  position: relative;
+  z-index: 2; /* z-index bada rakhna so it's above bg */
+  padding: 20px;
+}
+
+/* Overlay effect for readability (optional) */
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.1); /* Light black overlay */
+  z-index: 1;
+}
+
+/* Manga Cards ko readable aur visible banao */
+.manga-card {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 25px;
+  border-radius: 12px;
+  margin: 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 3;
+  filter: blur(6px);
+}
+
+.manga-card img {
+  width: 150px;   
+  
+  height: auto;             /* keeps proportion */
+  
+}
+
+.manga-card h3 {
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+}
+.manga-card a {
+  display: block;
+  text-align: center;
+  border: 4px solid white;    /* White border on full card */
+  border-radius: 20px;
+  padding: 10px;
+  text-decoration: none;
+  background-color: #000;     /* Optional: card bg color */
+  transition: transform 0.3s ease;
+}
+
+.manga-card a:hover {
+  transform: scale(1.03);     /* Little hover zoom */
+}
+.manga-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.manga-page-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
+  margin-bottom: 20px;
+}
+
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.0); /* soft black overlay */
+  z-index: 0;
+}
+
+header * {
+  position: relative;
+  z-index: 1;
+}
