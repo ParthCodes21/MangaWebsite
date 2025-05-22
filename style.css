@@ -116,7 +116,7 @@ header {
   padding: 0;
   background-image: url('Screenshot_20250520_204116.jpg');
   background-repeat: repeat; /* Full repeat horizontally + vertically */
-  background-size: 50000px auto; /* Set fixed width, height auto for proportion */
+  background-size: 500px auto; /* Set fixed width, height auto for proportion */
   background-position: top left;
   min-height: 100vh;
   color: white;
@@ -159,7 +159,7 @@ main::before {
 }
 
 .manga-card img {
-  width: 150px;   
+  width: 1500px;   
   
   height: auto;             /* keeps proportion */
   
